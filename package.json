@@ -1,6 +1,6 @@
 {
   "name": "gulp-striate",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A plugin for Gulp that parses striate template files",
   "keywords": [
     "gulpplugin",

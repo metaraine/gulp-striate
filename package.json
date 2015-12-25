@@ -1,0 +1,36 @@
+{
+  "name": "gulp-striate",
+  "version": "0.0.0",
+  "description": "A plugin for Gulp that parses striate template files",
+  "keywords": [
+    "gulpplugin",
+    "gulp",
+    "striate"
+    "ejs"
+  ],
+  "homepage": "https://github.com/metaraine/gulp-striate",
+  "bugs": "https://github.com/metaraine/gulp-striate/issues",
+  "author": {
+    "name": "Raine Lourie",
+    "email": "",
+    "url": "https://github.com/metaraine"
+  },
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/metaraine/gulp-striate.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "striate": "^1.0.0",
+    "gulp-util": "^3.0.7",
+    "through2": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=1.2.10"
+  },
+  "license": "ISC"
+}

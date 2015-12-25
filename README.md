@@ -2,7 +2,7 @@
 [![npm version](https://img.shields.io/npm/v/gulp-striate.svg)](https://npmjs.org/package/gulp-striate)
 [![Build Status](https://travis-ci.org/metaraine/gulp-striate.svg?branch=master)](https://travis-ci.org/metaraine/gulp-striate)
 
-striate plugin for [gulp](https://github.com/wearefractal/gulp)
+A plugin for [gulp](https://github.com/wearefractal/gulp) that parses striate template files.
 
 ## Usage
 

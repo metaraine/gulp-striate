@@ -2,10 +2,8 @@ var through2 = require('through2')
 var gutil = require('gulp-util')
 var striate = require('striate')
 
-module.exports = function (options, settings) {
-  settings = settings || {}
-  options = options || {}
-  settings.ext = settings.ext || '.html'
+module.exports = function (data, striateOptions) {
+  striateOptions = striateOptions || {}
 
   return through2.obj(function (file, enc, cb) {
     if (file.isNull()) {
@@ -17,14 +15,12 @@ module.exports = function (options, settings) {
       this.emit('error', new gutil.PluginError('gulp-striate', 'Streaming not supported'))
     }
 
-    options = file.data || options
-    options.filename = file.path
+    data = file.data || data || {}
 
     try {
       file.contents = new Buffer(
-        striate(file.contents.toString(), options)
+        striate(file.contents.toString(), striateOptions)
       )
-      file.path = gutil.replaceExtension(file.path, settings.ext)
     }
     catch (err) {
       this.emit('error', new gutil.PluginError('gulp-striate', err.toString()))

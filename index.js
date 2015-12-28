@@ -19,7 +19,7 @@ module.exports = function (data, striateOptions) {
 
     try {
       file.contents = new Buffer(
-        striate(file.contents.toString(), striateOptions)
+        striate(file.contents.toString(), data, striateOptions)
       )
     }
     catch (err) {
